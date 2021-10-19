@@ -1,0 +1,9 @@
+CREATE USER IF NOT EXISTS 'userAdmin'@'%' IDENTIFIED BY 'userAdmin';
+
+CREATE DATABASE IF NOT EXISTS userAdmin;
+
+ALTER DATABASE userAdmin
+  DEFAULT CHARACTER SET utf8
+  DEFAULT COLLATE utf8_general_ci;
+
+GRANT ALL PRIVILEGES ON *.* TO 'userAdmin'@'%' IDENTIFIED BY 'userAdmin';
